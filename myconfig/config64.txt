@@ -7,7 +7,7 @@ TEST_SET_IMAGES  = 46       # Total number of test set images in data/droneRace/
 
 # Variables for training and testing (making predictions):
 BATCH_SIZE = 2              # Batch size
-EPOCH      = 2              # Number of epoch
+EPOCH      = 50              # Number of epoch
 VALIDATION_SPLIT = 0.15     # Validation split percentage
 GEN_IMAGE_NUM = 16          # See below
 AUX_TOTAL = GEN_IMAGE_NUM**2 + GEN_IMAGE_NUM # Number of images to be prepared for training
