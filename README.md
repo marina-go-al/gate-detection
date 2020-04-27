@@ -32,7 +32,7 @@ The three `.hdf5` files located in `data/droneRace/outputWeights/` correspond to
 
 ## Tree structure
 
-This a list of all files and directories in the repo and how they are organized:
+This a list of all files and directories in the repo and how they are organized. <!--Some are not yet existing but will be automatically generated when running `preprocessing_images.py`, `mainTest.py`, `postprocessing_images.py` and `mainTrain.py`. This is, once you have followed at least once all the steps in [Workflow](#workflow).-->
 
 ```bash
 .
@@ -51,7 +51,7 @@ This a list of all files and directories in the repo and how they are organized:
 │   │   │   ├── original
 │   │   │   └── predict_ch1
 │   │   └── train -> training set data is stored here
-│   │       ├── aug
+│   │       ├── aug -> where data for training is automatically deployed with the required naming
 │   │       ├── image
 │   │       └── label
 │   ├── ROC_dataset -> data to plot the ROC curves will be generated and stored here
