@@ -20,7 +20,7 @@ In this section, a brief explanation of all files is provided:
 
 `mainTest.py`: execute this file for testing.
 
-`postprocessing_images.py`: file that converts the predictions after running `mainTest.py` from 1-channel images to 3-channel images and resizes them to the desired size to then be able to plot the ROC curves.
+`postprocessing_images.py`: file that converts the predictions after running `mainTest.py` from 1-channel images to 3-channel images and resizes them to the desired size to then be able to plot the ROC curves. The results from running this file are deployed in `data/ROC_dataset/`
 
 `ROC_curves.py`: file for plotting the ROC curve for a particular model.
 
@@ -98,6 +98,6 @@ Now, to reproduce the results for the 128 x 128 case from the report (same appli
 
 ### Plotting ROC curves:
 
-**5)** Run `postprocessing_images.py`
+**5)** Run `postprocessing_images.py` and check out the results that have been deployed in `data/ROC_dataset/`
 
 **6)** Run `ROC_curves.py` and check out the results
