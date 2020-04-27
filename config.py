@@ -1,13 +1,19 @@
 
 # DEFINE GLOBAL VARIABLES IN THIS FILE
 
+'''
+#### IMPORTANT NOTE! -> The current configuration is the same as config128.txt (the 128 x 128 case in the report). 
+####                    So careful!! Do not train the network again with this configuration or the current weights file (the current model) will be overwritten
+####                    If this happens, you can redownload the corresponding weights file again from GitHub
+'''
+
 REPRODUCE_ORIGINAL_RESULTS = 1 # Set this value to 1 in case that you would like to split the dataset exactly as it originally was to test the results in the report
-INPUT_IMAGE_SIZE = 64       # Define input image size (64, 128, 256)
-TEST_SET_IMAGES  = 46       # Total number of test set images in data/droneRace/test/original
+INPUT_IMAGE_SIZE = 128         # Define input image size (64, 128, 256)
+TEST_SET_IMAGES  = 46          # Total number of test set images in data/droneRace/test/original
 
 # Variables for training and testing (making predictions):
 BATCH_SIZE = 2              # Batch size
-EPOCH      = 2              # Number of epoch
+EPOCH      = 25             # Number of epoch
 VALIDATION_SPLIT = 0.15     # Validation split percentage
 GEN_IMAGE_NUM = 16          # See below
 AUX_TOTAL = GEN_IMAGE_NUM**2 + GEN_IMAGE_NUM # Number of images to be prepared for training
