@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pickle
+import os
 
 # Inputs
 fontSize = 25
@@ -11,6 +12,10 @@ hst_plot = 1
 size = 64
 ROC_path = 'data/ROC_dataset/myROCs/'
 deploy_path = 'data/report_images/'
+
+if int(os.path.isdir(deploy_path)) == 0:
+        print('Creating directory for training data')
+        os.mkdir(deploy_path)
 
 # 1) ROC CURVES PLOT:
 
