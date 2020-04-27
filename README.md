@@ -20,7 +20,7 @@ In this section, a brief explanation of all files is provided:
 
 `mainTest.py`: execute this file for testing.
 
-`postprocessing_images.py: file that converts the predictions after running `mainTest.py` from 1-channel images to 3-channel images and resizes them to the desired size to then be able to plot the ROC curves.
+`postprocessing_images.py`: file that converts the predictions after running `mainTest.py` from 1-channel images to 3-channel images and resizes them to the desired size to then be able to plot the ROC curves.
 
 `ROC_curves.py`: file for plotting the ROC curve for a particular model.
 
@@ -68,3 +68,32 @@ This a list of all files and directories in the repo and how they are organized:
 ```
 
 ## Workflow
+
+
+**1)**: Substitute the *WashingtonOBRace* example directory by your own *WashingtonOBRace* folder containing the data set (exactly the same that we were provided on Brightspace: do not change names of files or the directory)
+
+**2)**: Run `preprocessing_images.py`
+
+Now, choose between **A** and **B**:
+
+### A. Reproducing the results from the report (points 3 and 4):
+
+Now, to reproduce the results for the 128 x 128 case from the report (same applies to 64 x 64 or 256 x 256):
+
+**3)** Copy the content of config64.txt into config.py
+
+**4)** Run `mainTest.py` and check out the results that have been deployed in `data/droneRace/test/predict_ch1/`
+
+### B. Training your own model and generating your own results:
+
+**3.1)** Customize your parameters in `config.py`
+
+**3.2)** Run `mainTrain.py` and wait until the training has finished
+
+**4)** Run `mainTest.py` and check out the results that have been deployed in `data/droneRace/test/predict_ch1/`
+
+### Plotting ROC curves:
+
+**5)** Run `postprocessing_images.py`
+
+**6)** Run `ROC_curves.py` and check out the results
