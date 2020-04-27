@@ -36,26 +36,26 @@ This a list of all files and directories in the repo and how they are organized:
 
 ```bash
 .
-├── config.py
+├── config.py -> file where all global variables are defined
 ├── data
 │   ├── droneRace
-│   │   ├── outputWeights
+│   │   ├── outputWeights -> weight and history loss files are stored here
 │   │   │   ├── drone_bs2_ep15_im272_size256.hdf5
 │   │   │   ├── drone_bs2_ep15_im272_size256_history.npy
 │   │   │   ├── drone_bs2_ep25_im272_size128.hdf5
 │   │   │   ├── drone_bs2_ep25_im272_size128_history.npy
 │   │   │   ├── drone_bs2_ep50_im272_size64.hdf5
 │   │   │   └── drone_bs2_ep50_im272_size64_history.npy
-│   │   ├── test
+│   │   ├── test -> test set data is stored here
 │   │   │   ├── masks
 │   │   │   ├── original
 │   │   │   └── predict_ch1
-│   │   └── train
+│   │   └── train -> training set data is stored here
 │   │       ├── aug
 │   │       ├── image
 │   │       └── label
-│   ├── ROC_dataset
-│   └── WashingtonOBRace
+│   ├── ROC_dataset -> data to plot the ROC curves will be generated and stored here
+│   └── WashingtonOBRace -> folder that you have to replace with your own data set
 ├── dataMine.py
 ├── getMinSize.py
 ├── mainTest.py
@@ -70,7 +70,7 @@ This a list of all files and directories in the repo and how they are organized:
 ## Workflow
 
 
-**1)**: Substitute the *WashingtonOBRace* example directory by your own *WashingtonOBRace* folder containing the data set (exactly the same that we were provided on Brightspace: do not change names of files or the directory)
+**1)**: Substitute the *WashingtonOBRace* example directory by your own *WashingtonOBRace* folder containing the data set: the INNER one directly containing the data set, (NOT the OUTER one that contains the README.txt and the inner directory). So remeber, the INNER FOLDER (exactly the same that we were provided on Brightspace: do not change names of files or the directory)
 
 **2)**: Run `preprocessing_images.py`
 
