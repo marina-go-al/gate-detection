@@ -2,6 +2,7 @@ from modelMine import *
 from dataMine import *
 import matplotlib.pyplot as plt
 import config
+import os
 
 # INPUTS
 name           = config.WEIGHTS_HISTORY_SAVE_NAME    # Name for the weights and history files to be saved
@@ -28,8 +29,13 @@ if gen_data == 1:
     '''
     data_gen_args = dict()
 
+    deployPath = 'data/droneRace/train/aug'
+
+    if int(os.path.isdir(deployPath)) == 0:
+        print('Creating aug directory for training')
+        os.mkdir(deployPath)
   
-    myGene = trainGenerator(gen_num_images,'data/droneRace/train/','image','label',data_gen_args,save_to_dir = 'data/droneRace/train/aug') # The training data will be saved to save_to_dir location
+    myGene = trainGenerator(gen_num_images,'data/droneRace/train/','image','label',data_gen_args,save_to_dir = deployPath) # The training data will be saved to save_to_dir location
     num_batch = gen_num_images
     for i,batch in enumerate(myGene):
         if(i >= num_batch):
