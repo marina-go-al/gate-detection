@@ -74,7 +74,7 @@ This a list of all files and directories in the repo and how they are organized.
 ## Workflow
 
 
-**1)**: Substitute the *WashingtonOBRace* example directory by your own *WashingtonOBRace* folder containing the data set: the INNER one directly containing the data set, (NOT the OUTER one that contains the README.txt and the inner directory). So remeber, the INNER FOLDER (exactly the same that we were provided on Brightspace: do not change names of files or the directory)
+**1)**: Substitute the *WashingtonOBRace* example directory in `data/WashingtonOBRace` by your own *WashingtonOBRace* folder containing the data set: the INNER one directly containing the data set, (NOT the OUTER one that contains the README.txt and the inner directory). So remeber, the INNER FOLDER (exactly the same that we were provided on Brightspace: do not change names of files or the directory)
 
 **2)**: Run `preprocessing_images.py`
 
