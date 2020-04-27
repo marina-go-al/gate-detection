@@ -84,7 +84,7 @@ Now, choose between **A** and **B**:
 
 Now, to reproduce the results for the 128 x 128 case from the report (same applies to 64 x 64 or 256 x 256):
 
-**3)** Copy the content of `myconfig/config64.txt` into `config.py`
+**3)** Copy the content of `myconfig/config128.txt` into `config.py` (this is already the default configuration right now)
 
 **4)** Run `mainTest.py` and check out the results that have been deployed in `data/droneRace/test/predict_ch1/`
 
