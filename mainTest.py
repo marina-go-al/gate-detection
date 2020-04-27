@@ -5,6 +5,7 @@ import pickle
 import timeit
 from keras.utils import plot_model
 import config
+import os
 
 # INPUTS
 
@@ -16,6 +17,10 @@ deploy_path      = "data/droneRace/test/predict_ch1"  # Path where predictions w
 name             = config.WEIGHTS_HISTORY_SAVE_NAME   # Name of weights and history data files to make the predictions
 
 plot_history     = 1                                  # Set 1 for plotting the history and 0 otherwise
+
+if int(os.path.isdir(deploy_path)) == 0:
+        print('Creating directory for deploying test predictions')
+        os.mkdir(deploy_path)
 
 if plot_history == 1:
     history = np.load('data/droneRace/outputWeights/' + name + '_history.npy',allow_pickle='TRUE').item()

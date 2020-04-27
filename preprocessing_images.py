@@ -32,6 +32,28 @@ masks_deployPath = 'data/droneRace/train/label/'
 testImage_deployPath  = 'data/droneRace/test/original/'
 testMask_deployPath  = 'data/droneRace/test/masks/'
 
+train_deployPath = 'data/droneRace/train/'
+test_deployPath = 'data/droneRace/test/'
+
+if int(os.path.isdir(train_deployPath)) == 0:
+        print('Creating directory for training data')
+        os.mkdir(train_deployPath)
+if int(os.path.isdir(test_deployPath)) == 0:
+        print('Creating directory for testing data')
+        os.mkdir(test_deployPath)
+if int(os.path.isdir(image_deployPath)) == 0:
+        print('Creating directory for training images')
+        os.mkdir(image_deployPath)
+if int(os.path.isdir(masks_deployPath)) == 0:
+        print('Creating directory for training masks')
+        os.mkdir(masks_deployPath)
+if int(os.path.isdir(testImage_deployPath)) == 0:
+        print('Creating directory for testing images')
+        os.mkdir(testImage_deployPath)
+if int(os.path.isdir(testMask_deployPath)) == 0:
+        print('Creating directory for testing images')
+        os.mkdir(testMask_deployPath)
+
 if int(len(image_list) == len(mask_list)) == 0:
     print('The number of IMAGES and MASKS is not the same. Review your dataset and fix before continue!!!')
 
