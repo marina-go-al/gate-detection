@@ -37,6 +37,15 @@ This a list of all files and directories in the repo and how they are organized.
 ```bash
 .
 ├── config.py -> file where all global variables are defined
+├── dataMine.py
+├── getMinSize.py
+├── mainTest.py
+├── mainTrain.py
+├── modelMine.py
+├── plots.py
+├── postprocessing_images.py
+├── preprocessing_images.py
+├── ROC_curves.py
 ├── data
 │   ├── droneRace
 │   │   ├── outputWeights -> weight and history loss files are stored here
@@ -56,15 +65,10 @@ This a list of all files and directories in the repo and how they are organized.
 │   │       └── label
 │   ├── ROC_dataset -> data to plot the ROC curves will be generated and stored here
 │   └── WashingtonOBRace -> folder that you have to replace with your own data set
-├── dataMine.py
-├── getMinSize.py
-├── mainTest.py
-├── mainTrain.py
-├── modelMine.py
-├── plots.py
-├── postprocessing_images.py
-├── preprocessing_images.py
-└── ROC_curves.py
+└── myconfig
+    ├── config128.txt -> Copy this file into config.py to reproduce 128 x 128 results
+    ├── config256.txt -> Copy this file into config.py to reproduce 256 x 256 results
+    └── config64.txt  -> Copy this file into config.py to reproduce  64 x  64 results
 ```
 
 ## Workflow
@@ -80,7 +84,7 @@ Now, choose between **A** and **B**:
 
 Now, to reproduce the results for the 128 x 128 case from the report (same applies to 64 x 64 or 256 x 256):
 
-**3)** Copy the content of `config64.txt` into `config.py`
+**3)** Copy the content of `myconfig/config64.txt` into `config.py`
 
 **4)** Run `mainTest.py` and check out the results that have been deployed in `data/droneRace/test/predict_ch1/`
 
