@@ -15,7 +15,8 @@ mask_list  = sorted(glob.glob(os.path.join(path,"%s*.png"%mask_prefix)))
 num_testSet = config.TEST_SET_IMAGES
 
 if config.REPRODUCE_ORIGINAL_RESULTS == 0:
-    index_list = list(range(0,len(image_list)))
+    index_list = [aux.split('_')[1] for aux in mask_list]
+    index_list = [aux.split('.')[0] for aux in index_list]
     index_list = random.sample(index_list,len(index_list))
     index_list = index_list[0:num_testSet]
 else:
