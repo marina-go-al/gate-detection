@@ -1,8 +1,10 @@
 # 5044030-Marina-gateDetection
 
-This repository contains all the necessary scripts and information to run the code corresponding to the *individial assignment* of the *AE4317 - Autonomous Flight of Micro Air Vehicles* course. The project is based on a binary image segmentation approach by means of the U-Net CNN. All the scripts have been extensively automatized so that eveyrything is easy to understand and execute just by changing some global variables.
+This repository contains all the necessary scripts and information to run the code corresponding to the *individial assignment* of the *AE4317 - Autonomous Flight of Micro Air Vehicles* course. The project is based on a binary image segmentation approach by means of the U-Net CNN. All the scripts have been extensively automatized so that everything is easy to understand and execute just by changing some global variables.
 
-**[IMPORTANT NOTE]:** In case that you would like to skip all the explanations, go directly to the [Workflow](#workflow) section to learn how to run the code.
+**[IMPORTANT NOTE 1]:** No data set has been uploaded to this repo.
+
+**[IMPORTANT NOTE 2]:** In case that you would like to skip all the explanations, go directly to the [Workflow](#workflow) section to learn how to run the code.
 
 ## Files summary
 
@@ -55,15 +57,15 @@ This a list of all files and directories in the repo and how they are organized.
 │   │   │   ├── drone_bs2_ep25_im272_size128_history.npy
 │   │   │   ├── drone_bs2_ep50_im272_size64.hdf5
 │   │   │   └── drone_bs2_ep50_im272_size64_history.npy
-│   │   ├── test -> test set data is stored here
+│   │   ├── test    -> test set data is stored here
 │   │   │   ├── masks
 │   │   │   ├── original
 │   │   │   └── predict_ch1
-│   │   └── train -> training set data is stored here
+│   │   └── train   -> training set data is stored here
 │   │       ├── aug -> where data for training is automatically deployed with the required naming
 │   │       ├── image
 │   │       └── label
-│   ├── ROC_dataset -> data to plot the ROC curves will be generated and stored here
+│   ├── ROC_dataset      -> data to plot the ROC curves will be generated and stored here
 │   └── WashingtonOBRace -> folder that you have to replace with your own data set
 └── myconfig
     ├── config128.txt -> Copy this file into config.py to reproduce 128 x 128 results
