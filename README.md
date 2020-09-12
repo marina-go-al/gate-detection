@@ -1,10 +1,13 @@
-# 5044030-Marina-gateDetection
+# Gate detection algorithm: image segmentation
 
 This repository contains all the necessary scripts and information to run the code corresponding to the *individial assignment* of the *AE4317 - Autonomous Flight of Micro Air Vehicles* course. The project is based on a binary image segmentation approach by means of the U-Net CNN. All the scripts have been extensively automatized so that everything is easy to understand and execute just by changing some global variables.
 
-**[IMPORTANT NOTE 1]:** No data set has been uploaded to this repo.
 
-**[IMPORTANT NOTE 2]:** In case that you would like to skip all the explanations, go directly to the [Workflow](#workflow) section to learn how to run the code.
+**[IMPORTANT NOTE 1]: I highly recommend starting by having a look at file *Marina_Report.pdf* to better understand the purpose of this work and its scope.**
+
+**[IMPORTANT NOTE 2]:** No data set has been uploaded to this repo.
+
+**[IMPORTANT NOTE 3]:** In case that you would like to skip all the explanations, go directly to the [Workflow](#workflow) section to learn how to run the code.
 
 ## Files summary
 
